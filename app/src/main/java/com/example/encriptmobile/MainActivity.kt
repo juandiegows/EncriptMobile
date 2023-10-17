@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.core.widget.addTextChangedListener
 import com.example.encriptmobile.databinding.ActivityMainBinding
 import java.security.MessageDigest
+import java.security.spec.MGF1ParameterSpec
 
 class MainActivity : AppCompatActivity() {
 
