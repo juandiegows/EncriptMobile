@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <EditText
@@ -16,6 +17,8 @@
         android:ems="10"
         android:hint="to write the text near"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,4 +33,13 @@
         app:layout_constraintEnd_toEndOf="@+id/txtText"
         app:layout_constraintStart_toStartOf="@+id/txtText"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtText"
+        app:layout_constraintStart_toStartOf="@+id/txtText"
+        app:layout_constraintTop_toBottomOf="@+id/txtText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
